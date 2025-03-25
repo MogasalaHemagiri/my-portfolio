@@ -2,12 +2,12 @@ import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 
 const taglines = [
-  "I'm Hemagiri Naidu......😎",
-  "I_Love_Coding_In.py.....🙂",
-  "I Like Learning AI.....🧡",
-  "I Like Cybersecurity.......💛",
-  "Building Next-Gen....... 🚀 
-  "Red Team & AI Security......💥",
+  "I'm Hemagiri Naidu...",
+  "I_Love_Coding_In.py.....",
+  "I Like Learning AI...",
+  "I Like Cybersecurity....",
+  "Building Next-Gen.......", 
+  "Red Team & AI Security.....",
 ];
 
 const Hero = () => {
@@ -21,7 +21,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <section className="h-screen flex flex-col justify-center items-center bg-blue-600 text-white">
+    <section className="h-screen flex flex-col justify-center items-center bg-blue-600 text-green">
       <motion.h1 
         className="text-5xl font-bold text-center"
         initial={{ opacity: 0 }}
