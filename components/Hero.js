@@ -2,12 +2,12 @@ import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 
 const taglines = [
-  "I'm Hemagiri Naidu",
-  "I_Love_Coding_In.py",
-  "I Like Learning AI",
-  "I Like Cybersecurity",
-  "Building Next-Gen AGI",
-  "Red Team & AI Security",
+  "I'm Hemagiri Naidu......😎",
+  "I_Love_Coding_In.py.....🙂",
+  "I Like Learning AI.....🧡",
+  "I Like Cybersecurity.......💛",
+  "Building Next-Gen....... 🚀 
+  "Red Team & AI Security......💥",
 ];
 
 const Hero = () => {
