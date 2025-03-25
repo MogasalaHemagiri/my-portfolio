@@ -36,7 +36,7 @@ const projects = [
 
 const Projects = () => {
   return (
-    <section id="projects" className="py-20 bg-gray-100 dark:bg-gray-900">
+    <section id="projects" className="py-20 bg-green-100 dark:bg-green-900">
       <div className="container mx-auto px-4">
         <motion.h2
           className="text-4xl font-bold text-center mb-8"
@@ -54,14 +54,23 @@ const Projects = () => {
               href={project.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="block bg-white dark:bg-gray-800 p-6 rounded-lg shadow hover:shadow-xl transition"
+              className="relative block bg-white dark:bg-gray-800 p-6 rounded-lg shadow hover:shadow-xl transition overflow-hidden"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.2 }}
             >
-              <h3 className="text-2xl font-semibold mb-2">{project.title}</h3>
-              <p>{project.description}</p>
+              <div className="relative">
+                {/* Animated pulsing circle behind the title */}
+                <motion.div
+                  className="absolute inset-0 rounded-full bg-green-300 opacity-50"
+                  initial={{ scale: 0 }}
+                  animate={{ scale: [1, 1.5, 1] }}
+                  transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
+                />
+                <h3 className="relative text-2xl font-semibold mb-2">{project.title}</h3>
+              </div>
+              <p className="relative">{project.description}</p>
             </motion.a>
           ))}
         </div>
