@@ -3,19 +3,34 @@ import { motion } from 'framer-motion'
 
 const projects = [
   {
-    title: "AI Chatbot",
-    description: "An AI-powered chatbot with natural language processing.",
-    link: "https://github.com/yourusername/aichatbot"
+    title: "Blockchain Insider Bot",
+    description: "A bot that provides real-time insights and analytics on blockchain trends and news.",
+    link: "https://github.com/MogasalaHemagiri/blockchain-insider-bot"
   },
   {
-    title: "CyberSec Dashboard",
-    description: "A comprehensive security dashboard for real-time threat monitoring.",
-    link: "https://github.com/yourusername/cybersec-dashboard"
+    title: "Terramind",
+    description: "An intelligent platform integrating AI with blockchain for advanced data analytics.",
+    link: "https://github.com/MogasalaHemagiri/Terramind"
   },
   {
-    title: "ML Image Classifier",
-    description: "A deep learning model deployed to classify images with high accuracy.",
-    link: "https://github.com/yourusername/ml-image-classifier"
+    title: "MixedLLM",
+    description: "A framework that leverages multiple language models for enhanced AI performance.",
+    link: "https://github.com/MogasalaHemagiri/Mixedllm"
+  },
+  {
+    title: "AI Code Review System",
+    description: "An automated code review system powered by AI to enhance code quality and efficiency.",
+    link: "https://github.com/MogasalaHemagiri/ai-code-review-system"
+  },
+  {
+    title: "PyTorch YOLO v3",
+    description: "A real-time object detection implementation using YOLO v3 architecture in PyTorch.",
+    link: "https://github.com/MogasalaHemagiri/pytorch-yolo-v3"
+  },
+  {
+    title: "Health Chatbot",
+    description: "An AI-powered chatbot offering health advice and information to users.",
+    link: "https://github.com/MogasalaHemagiri/Health-chatbot"
   }
 ]
 
