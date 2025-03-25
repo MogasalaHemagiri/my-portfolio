@@ -38,13 +38,13 @@ const Hero = () => {
         <a href="https://github.com/MogasalaHemagiri" target="_blank" rel="noopener noreferrer">
           <img src="/icons/github.svg" alt="GitHub" className="w-8 h-8" />
         </a>
-        <a href="https://linkedin.com/in/mr-hemagiri" target="_blank" rel="noopener noreferrer">
+        <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer">
           <img src="/icons/linkedin.svg" alt="LinkedIn" className="w-8 h-8" />
         </a>
-        <a href="https://t.me/networkdefender" target="_blank" rel="noopener noreferrer">
+        <a href="https://t.me/yourusername" target="_blank" rel="noopener noreferrer">
           <img src="/icons/telegram.svg" alt="Telegram" className="w-8 h-8" />
         </a>
-        <a href="https://instagram.com/captain_anand0.7" target="_blank" rel="noopener noreferrer">
+        <a href="https://instagram.com/yourprofile" target="_blank" rel="noopener noreferrer">
           <img src="/icons/instagram.svg" alt="Instagram" className="w-8 h-8" />
         </a>
         <a href="https://orcid.org/yourid" target="_blank" rel="noopener noreferrer">
@@ -52,49 +52,12 @@ const Hero = () => {
         </a>
       </div>
 
-      {/* Education Section */}
-      <div className="mt-8 text-center">
-        <h2 className="text-2xl font-semibold">Education</h2>
-        <p className="text-lg">
-          B.Tech Artificial Intelligence & Data Science - 
-          <a href="https://www.jntua.ac.in/" className="text-blue-600 font-bold hover:underline" target="_blank">
-            JNTUA University (2021 - 2025)
-          </a>
-        </p>
-      </div>
-
-      {/* Experience Section */}
-      <div className="mt-8 text-center">
-        <h2 className="text-2xl font-semibold">Experience</h2>
-        <p className="text-lg">
-          Cybersecurity Intern - <span className="font-bold">Palo Alto Networks</span> (Jan 2024 - Apr 2024)
-        </p>
-        <p className="text-lg">
-          ChatGPT/Gen AI Intern - <span className="font-bold">AI Research</span> (Apr 2024 - Jul 2024)
-        </p>
-      </div>
-
-      {/* Research & Publications */}
-      <div className="mt-8 text-center">
-        <h2 className="text-2xl font-semibold">Research & Publications</h2>
-        <p className="text-lg">
-          Published Paper: <span className="font-bold">Cardiovascular Tissue Cancer Detection using Neural Networks</span>
-        </p>
-        <p className="text-lg">Ongoing Research in AI & Cybersecurity</p>
-      </div>
-
-      {/* Skills Section */}
-      <div className="mt-8 text-center">
-        <h2 className="text-2xl font-semibold">Skills</h2>
-        <p className="text-lg font-bold">🧠 AI & Cybersecurity</p>
-        <p className="text-lg">
-          🚀 Python | Django | Next.js | PyTorch | TensorFlow | HuggingFace | R | Solidity | JavaScript
-        </p>
-        <p className="text-lg">
-          💡 Neural Networks | Data Structures | Full-Stack Development | Cloud (Azure, AWS)
-        </p>
-        <p className="text-lg">🛠 Operating Systems: Windows | Linux</p>
-        <p className="text-lg">🗣 Communication | Critical Thinking | Analytical Thinking | Team Management</p>
+      {/* Navigation Links */}
+      <div className="mt-6 flex gap-6">
+        <a href="/education" className="text-lg font-semibold text-blue-600 hover:underline">Education</a>
+        <a href="/experience" className="text-lg font-semibold text-blue-600 hover:underline">Experience</a>
+        <a href="/skills" className="text-lg font-semibold text-blue-600 hover:underline">Skills</a>
+        <a href="/publications" className="text-lg font-semibold text-blue-600 hover:underline">Research</a>
       </div>
     </section>
   );
