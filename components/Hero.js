@@ -21,7 +21,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <section className="h-screen flex flex-col justify-center items-center bg-blue-900 text-white">
+    <section className="h-screen flex flex-col justify-center items-center bg-blue-600 text-white">
       <motion.h1 
         className="text-5xl font-bold text-center"
         initial={{ opacity: 0 }}
