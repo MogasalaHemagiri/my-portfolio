@@ -111,32 +111,32 @@ const Contact = () => {
         )}
 
         {/* Resume Section */}
-        <div className="flex justify-center gap-4">
-  {/* View Resume Button (Opens Google Drive Link) */}
-  <a
-    href="https://drive.google.com/file/d/1SiC1twq-tmf2r_gFno8PO9MdjfMNp8tn/view?usp=drivesdk"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="flex items-center gap-2 py-3 px-6 bg-blue-600 text-white font-bold rounded-lg hover:bg-blue-700 transition duration-300 shadow-md"
-  >
-    <FaEye /> View Resume
-  </a>
+        <div className="text-center mt-12">
+          <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-6">
+            📜 My Resume
+          </h2>
 
-  {/* Download Resume Button (Direct Google Drive Download) */}
-  <a
-    href="https://drive.google.com/uc?export=download&id=1SiC1twq-tmf2r_gFno8PO9MdjfMNp8tn"
-    className="flex items-center gap-2 py-3 px-6 bg-green-600 text-white font-bold rounded-lg hover:bg-green-700 transition duration-300 shadow-md"
-  >
-    <FaDownload /> Download Resume
-  </a>
-</div>
+          <div className="flex justify-center gap-4">
+            {/* View Resume Button (Opens Google Drive Link) */}
+            <a
+              href="https://drive.google.com/file/d/1SiC1twq-tmf2r_gFno8PO9MdjfMNp8tn/view?usp=drivesdk"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 py-3 px-6 bg-blue-600 text-white font-bold rounded-lg hover:bg-blue-700 transition duration-300 shadow-md"
+            >
+              <FaEye /> View Resume
+            </a>
 
-  </a>
-</div>
-
+            {/* Download Resume Button (Direct Google Drive Download) */}
+            <a
+              href="https://drive.google.com/uc?export=download&id=1SiC1twq-tmf2r_gFno8PO9MdjfMNp8tn"
+              className="flex items-center gap-2 py-3 px-6 bg-green-600 text-white font-bold rounded-lg hover:bg-green-700 transition duration-300 shadow-md"
+            >
+              <FaDownload /> Download Resume
             </a>
           </div>
         </div>
+
       </div>
     </section>
   );
