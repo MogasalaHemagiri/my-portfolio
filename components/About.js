@@ -1,5 +1,9 @@
 // components/About.js
-import { motion } from 'framer-motion'
+import { motion } from "framer-motion";
+import Education from "./Education";
+import Experience from "./Experience";
+import Skills from "./Skills";
+import Publications from "./Publications";
 
 const About = () => {
   return (
@@ -23,9 +27,15 @@ const About = () => {
         >
           I’m a passionate AI Developer with a cybersecurity background. My expertise ranges from full-stack development to building cutting-edge machine learning models. I continuously push the envelope to create applications that not only perform but inspire.
         </motion.p>
+
+        {/* Additional Sections */}
+        <Education />
+        <Experience />
+        <Skills />
+        <Publications />
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default About
+export default About;
