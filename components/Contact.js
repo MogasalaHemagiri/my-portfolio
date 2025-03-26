@@ -1,6 +1,30 @@
+import { useState } from "react";
 import { FaDownload, FaEye, FaEnvelope, FaPhone } from "react-icons/fa";
 
 const Contact = () => {
+  const [formData, setFormData] = useState({ name: "", email: "", reason: "" });
+  const [message, setMessage] = useState("");
+
+  // Handle input changes
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  // Handle form submission
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    
+    const response = await fetch("/api/contact", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(formData),
+    });
+
+    const data = await response.json();
+    setMessage(data.message);
+    setFormData({ name: "", email: "", reason: "" }); // Clear form after submission
+  };
+
   return (
     <section id="contact" className="py-20 bg-gray-100 dark:bg-gray-900">
       <div className="container mx-auto px-6">
@@ -30,13 +54,16 @@ const Contact = () => {
         </div>
 
         {/* Contact Form */}
-        <form className="max-w-2xl mx-auto bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg">
+        <form onSubmit={handleSubmit} className="max-w-2xl mx-auto bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg">
           <div className="mb-4">
             <label className="block text-lg font-semibold text-gray-700 dark:text-gray-300">
               Your Name
             </label>
             <input
               type="text"
+              name="name"
+              value={formData.name}
+              onChange={handleChange}
               className="w-full p-3 border rounded-lg focus:ring focus:ring-blue-300 dark:bg-gray-700 dark:text-white"
               placeholder="Enter your name"
               required
@@ -49,6 +76,9 @@ const Contact = () => {
             </label>
             <input
               type="email"
+              name="email"
+              value={formData.email}
+              onChange={handleChange}
               className="w-full p-3 border rounded-lg focus:ring focus:ring-blue-300 dark:bg-gray-700 dark:text-white"
               placeholder="Enter your email"
               required
@@ -60,6 +90,9 @@ const Contact = () => {
               Reason for Contact
             </label>
             <textarea
+              name="reason"
+              value={formData.reason}
+              onChange={handleChange}
               className="w-full p-3 border rounded-lg focus:ring focus:ring-blue-300 dark:bg-gray-700 dark:text-white"
               placeholder="Enter your message..."
               rows="4"
@@ -71,6 +104,11 @@ const Contact = () => {
             Send Message
           </button>
         </form>
+
+        {/* Display Success or Error Message */}
+        {message && (
+          <p className="text-center text-green-500 mt-4 font-semibold">{message}</p>
+        )}
 
         {/* Resume Section */}
         <div className="text-center mt-12">
