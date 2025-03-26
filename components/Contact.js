@@ -134,6 +134,7 @@ const Contact = () => {
             {/* Download Resume Button */}
             <a
               href="https://drive.google.com/uc?export=download&id=1SiC1twq-tmf2r_gFno8PO9MdjfMNp8tn"
+              download
               className="flex items-center gap-2 py-3 px-6 bg-green-600 text-white font-bold rounded-lg hover:bg-green-700 transition duration-300 shadow-md"
             >
               <FaDownload /> Download Resume
