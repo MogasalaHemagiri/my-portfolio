@@ -26,9 +26,11 @@ const About = () => {
           viewport={{ once: true }}
           transition={{ duration: 1, delay: 0.3 }}
         >
-          I’m a passionate **AI Developer** with a **cybersecurity background**.  
-          My expertise ranges from **full-stack development** to **cutting-edge AI research**.  
-          I continuously push the envelope to create **high-performance** and **inspiring applications**.
+          I am a recent graduate in Artificial Intelligence & Data Science from JNTUA University (2021 - 2025), passionate about building AI-driven cybersecurity solutions. My expertise spans across machine learning, deep learning, cybersecurity, and full-stack development.  
+
+I have completed internships in Cybersecurity (Palo Alto Networks) and ChatGPT/Gen AI (Blackbucks), where I worked on threat detection systems, AI automation, and security protocols.  
+
+I am now seeking exciting opportunities as a Fresher in AI & Cybersecurity, where I can contribute my problem-solving mindset, technical expertise, and passion for innovation
         </motion.p>
 
         {/* Education Section */}
