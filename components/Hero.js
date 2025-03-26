@@ -47,13 +47,13 @@ const Hero = () => {
         <a href="https://github.com/MogasalaHemagiri" target="_blank" rel="noopener noreferrer">
           <img src="/icons/github.svg" alt="GitHub" className="w-8 h-8" />
         </a>
-        <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer">
+        <a href="https://linkedin.com/in/mr-hemagiri" target="_blank" rel="noopener noreferrer">
           <img src="/icons/linkedin.svg" alt="LinkedIn" className="w-8 h-8" />
         </a>
-        <a href="https://t.me/yourusername" target="_blank" rel="noopener noreferrer">
+        <a href="https://t.me/networkdefender" target="_blank" rel="noopener noreferrer">
           <img src="/icons/telegram.svg" alt="Telegram" className="w-8 h-8" />
         </a>
-        <a href="https://instagram.com/yourprofile" target="_blank" rel="noopener noreferrer">
+        <a href="https://instagram.com/captain_anand0.7" target="_blank" rel="noopener noreferrer">
           <img src="/icons/instagram.svg" alt="Instagram" className="w-8 h-8" />
         </a>
         <a href="https://orcid.org/yourid" target="_blank" rel="noopener noreferrer">
