@@ -25,6 +25,7 @@ const Hero = () => {
       className="h-screen flex flex-col justify-center items-center text-white relative"
       style={{
         backgroundImage: "url('/icons/ai-developer-bg.jpg')", 
+
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
@@ -57,7 +58,7 @@ const Hero = () => {
           <img src="/icons/instagram.svg" alt="Instagram" className="w-8 h-8" />
         </a>
         <a href="https://orcid.org/yourid" target="_blank" rel="noopener noreferrer">
-          <img src="/icons/orcid.svg" alt="ORCID" className="w-8 h-8" />
+          <img src="/icons/ORCID_iD.svg" alt="ORCID" className="w-8 h-8" />
         </a>
       </div>
 
