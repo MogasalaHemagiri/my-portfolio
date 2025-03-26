@@ -1,13 +1,9 @@
 // pages/index.js
 import Navbar from '../components/Navbar'
 import Hero from '../components/Hero'
-import About from '../components/About'
-import Education from '../components/Education'
-import Experience from '../components/Experience'
-import Skills from '../components/Skills'
-import Publications from '../components/Publications'
-import Contact from '../components/Contact'
+import About from '../components/About' // Includes Education, Experience, Skills, and Publications
 import Projects from '../components/Projects'
+import Contact from '../components/Contact'
 import Footer from '../components/Footer'
 
 export default function Home() {
@@ -15,11 +11,7 @@ export default function Home() {
     <div className="overflow-x-hidden">
       <Navbar />
       <Hero />
-      <About />
-      <Education />
-      <Experience />
-      <Skills />
-      <Publications />
+      <About /> {/* This already includes Education, Experience, Skills, and Publications */}
       <Projects />
       <Contact />
       <Footer />
