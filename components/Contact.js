@@ -13,7 +13,7 @@ const Contact = () => {
   // Handle form submission
   const handleSubmit = async (e) => {
     e.preventDefault();
-    
+
     const response = await fetch("/api/contact", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
@@ -54,7 +54,11 @@ const Contact = () => {
         </div>
 
         {/* Contact Form */}
-        <form onSubmit={handleSubmit} className="max-w-2xl mx-auto bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg">
+        <form
+          onSubmit={handleSubmit}
+          method="post"
+          className="max-w-2xl mx-auto bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg"
+        >
           <div className="mb-4">
             <label className="block text-lg font-semibold text-gray-700 dark:text-gray-300">
               Your Name
@@ -117,9 +121,9 @@ const Contact = () => {
           </h2>
 
           <div className="flex justify-center gap-4">
-            {/* View Resume Button (Opens Google Drive Link) */}
+            {/* View Resume Button */}
             <a
-              href="https://drive.google.com/file/d/1SiC1twq-tmf2r_gFno8PO9MdjfMNp8tn/view?usp=drivesdk"
+              href="https://drive.google.com/file/d/1SiC1twq-tmf2r_gFno8PO9MdjfMNp8tn/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 py-3 px-6 bg-blue-600 text-white font-bold rounded-lg hover:bg-blue-700 transition duration-300 shadow-md"
@@ -127,7 +131,7 @@ const Contact = () => {
               <FaEye /> View Resume
             </a>
 
-            {/* Download Resume Button (Direct Google Drive Download) */}
+            {/* Download Resume Button */}
             <a
               href="https://drive.google.com/uc?export=download&id=1SiC1twq-tmf2r_gFno8PO9MdjfMNp8tn"
               className="flex items-center gap-2 py-3 px-6 bg-green-600 text-white font-bold rounded-lg hover:bg-green-700 transition duration-300 shadow-md"
@@ -136,7 +140,6 @@ const Contact = () => {
             </a>
           </div>
         </div>
-
       </div>
     </section>
   );
