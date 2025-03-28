@@ -7,7 +7,7 @@ const Footer = () => {
         <div className="space-x-4">
           <a href="mailto:hemagiri1394.in@gmail.com.com" className="hover:text-blue-500">Email</a>
           <a href="https://linkedin.com/in/mr-hemagiri" target="_blank" rel="noopener noreferrer" className="hover:text-blue-500">LinkedIn</a>
-          <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" className="hover:text-blue-500">GitHub</a>
+          <a href="https://github.com/MogasalaHemagiri" target="_blank" rel="noopener noreferrer" className="hover:text-blue-500">GitHub</a>
         </div>
       </div>
     </footer>
