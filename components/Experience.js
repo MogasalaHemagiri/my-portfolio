@@ -10,13 +10,13 @@ const Experience = () => {
     },
     {
       role: "ChatGPT/Gen AI Intern",
-      company: "AI Research",
+      company: "Blackbucks ( Short term ) ",
       year: "Apr 2024 - Jul 2024",
     },
     {
       role: "AI-ML Intern",
-      company: "Blackbucks",
-      year: "Jan 2025 - Apr 2025",
+      company: "Blackbucks ( Long term)",
+      year: "Jan 2025 - june 2025",
     },
   ];
 
