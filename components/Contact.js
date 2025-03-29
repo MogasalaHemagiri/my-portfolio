@@ -1,30 +1,6 @@
-import { useState } from "react";
 import { FaDownload, FaEye, FaEnvelope, FaPhone } from "react-icons/fa";
 
 const Contact = () => {
-  const [formData, setFormData] = useState({ name: "", email: "", reason: "" });
-  const [message, setMessage] = useState("");
-
-  // Handle input changes
-  const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
-  };
-
-  // Handle form submission
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-
-    const response = await fetch("/api/contact", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(formData),
-    });
-
-    const data = await response.json();
-    setMessage(data.message);
-    setFormData({ name: "", email: "", reason: "" }); // Clear form after submission
-  };
-
   return (
     <section id="contact" className="py-20 bg-gray-100 dark:bg-gray-900">
       <div className="container mx-auto px-6">
@@ -53,67 +29,6 @@ const Contact = () => {
           </div>
         </div>
 
-        {/* Contact Form */}
-        <form
-          onSubmit={handleSubmit}
-          method="post"
-          className="max-w-2xl mx-auto bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg"
-        >
-          <div className="mb-4">
-            <label className="block text-lg font-semibold text-gray-700 dark:text-gray-300">
-              Your Name
-            </label>
-            <input
-              type="text"
-              name="name"
-              value={formData.name}
-              onChange={handleChange}
-              className="w-full p-3 border rounded-lg focus:ring focus:ring-blue-300 dark:bg-gray-700 dark:text-white"
-              placeholder="Enter your name"
-              required
-            />
-          </div>
-
-          <div className="mb-4">
-            <label className="block text-lg font-semibold text-gray-700 dark:text-gray-300">
-              Your Email
-            </label>
-            <input
-              type="email"
-              name="email"
-              value={formData.email}
-              onChange={handleChange}
-              className="w-full p-3 border rounded-lg focus:ring focus:ring-blue-300 dark:bg-gray-700 dark:text-white"
-              placeholder="Enter your email"
-              required
-            />
-          </div>
-
-          <div className="mb-4">
-            <label className="block text-lg font-semibold text-gray-700 dark:text-gray-300">
-              Reason for Contact
-            </label>
-            <textarea
-              name="reason"
-              value={formData.reason}
-              onChange={handleChange}
-              className="w-full p-3 border rounded-lg focus:ring focus:ring-blue-300 dark:bg-gray-700 dark:text-white"
-              placeholder="Enter your message..."
-              rows="4"
-              required
-            ></textarea>
-          </div>
-
-          <button className="w-full bg-gradient-to-r from-blue-500 to-indigo-600 text-white py-3 rounded-lg font-bold hover:opacity-90 transition duration-300">
-            Send Message
-          </button>
-        </form>
-
-        {/* Display Success or Error Message */}
-        {message && (
-          <p className="text-center text-green-500 mt-4 font-semibold">{message}</p>
-        )}
-
         {/* Resume Section */}
         <div className="text-center mt-12">
           <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-6">
@@ -123,7 +38,7 @@ const Contact = () => {
           <div className="flex justify-center gap-4">
             {/* View Resume Button */}
             <a
-              href="https://drive.google.com/file/d/1SiC1twq-tmf2r_gFno8PO9MdjfMNp8tn/view?usp=sharing"
+              href="https://drive.google.com/file/d/1-FRR1mCjCRgRZBuEzTFVNANJHpwqNGyu/view?usp=drivesdk"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 py-3 px-6 bg-blue-600 text-white font-bold rounded-lg hover:bg-blue-700 transition duration-300 shadow-md"
@@ -133,7 +48,7 @@ const Contact = () => {
 
             {/* Download Resume Button */}
             <a
-              href="https://drive.google.com/uc?export=download&id=1SiC1twq-tmf2r_gFno8PO9MdjfMNp8tn"
+              href="https://drive.google.com/uc?export=download&id=1-FRR1mCjCRgRZBuEzTFVNANJHpwqNGyu"
               download
               className="flex items-center gap-2 py-3 px-6 bg-green-600 text-white font-bold rounded-lg hover:bg-green-700 transition duration-300 shadow-md"
             >
