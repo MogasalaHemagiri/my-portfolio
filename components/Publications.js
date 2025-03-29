@@ -2,13 +2,11 @@
 import { motion } from "framer-motion";
 
 const Publications = () => {
-  const publications = [
-    {
+  const publications = [{
       title: "A Smart Prediction of Cardiovascular Diseases with Ensemble Classifiers",
-      description: "Published Paper in AI & Healthcare Research paperId: "INOCON2025-1331",
+      description: "Published Paper in AI & Healthcare Research",
       
     },
-    {
       title: "🔬 Ongoing Research in AI & Cybersecurity",
       description: "Exploring advanced techniques in AI-driven security solutions",
     },
