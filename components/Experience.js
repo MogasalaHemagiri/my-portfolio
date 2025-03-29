@@ -13,6 +13,11 @@ const Experience = () => {
       company: "AI Research",
       year: "Apr 2024 - Jul 2024",
     },
+    {
+      role: "AI-ML Intern",
+      company: "Blackbucks",
+      year: "Jan 2025 - Apr 2025",
+    },
   ];
 
   return (
